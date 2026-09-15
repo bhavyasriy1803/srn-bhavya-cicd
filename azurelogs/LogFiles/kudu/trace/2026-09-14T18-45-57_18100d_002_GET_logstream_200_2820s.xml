@@ -1,0 +1,5 @@
+<step title="Incoming Request" date="2026-09-14T18:45:57.188" instance="18100d" url="/logstream" method="GET" type="request" pid="835,1,5" Host="srn-bhavya-app.scm.azurewebsites.net" User-Agent="AZURECLI/2.90.0 (HOMEBREW)" Accept-Encoding="identity" Authorization="Bea..." x-ms-client-request-id="6d9dc0ba-b06c-11f1-a8ef-82ba95a64c5f" X-ARR-LOG-ID="6d9dc0ba-b06c-11f1-a8ef-82ba95a64c5f" CLIENT-IP="171.48.96.27:54270" X-SITE-DEPLOYMENT-ID="srn-bhavya-app" WAS-DEFAULT-HOSTNAME="srn-bhavya-app.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/logstream" X-Client-IP="171.48.96.27" X-Client-Port="54270" >
+  <step title="LogStreamHandlerMiddleware.Invoke" date="2026-09-14T18:45:57.235" /><!-- duration: 71ms -->
+  <step title="Error occurred" date="2026-09-14T19:32:57.476" type="error" text="LogStreamManager: ProcessRequest end" /><!-- duration: 12ms -->
+  <step title="Outgoing response" date="2026-09-14T19:32:57.532" type="response" statusCode="200" statusText="OK" /><!-- duration: 12ms -->
+</step><!-- duration: 2820363ms -->

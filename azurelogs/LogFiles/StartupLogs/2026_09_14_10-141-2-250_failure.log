@@ -1,0 +1,1122 @@
+========== New Cold Start Attempt (2026-09-14T18:36:15.4338582+00:00) ==========
+2026-09-14T18:36:15.4338582+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-09-14T18:36:17.9913759+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-09-14T18:36:17.9914357+00:00 ContainerStatus: Container start method called.
+2026-09-14T18:36:17.9914635+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:36:17.9914987+00:00 ContainerStatus: Establishing network.
+2026-09-14T18:36:17.9915527+00:00 ContainerStatus: Pulling image: appsvc/python:3.11_20260910.3.tuxprod.
+2026-09-14T18:37:04.1137650+00:00 ContainerStatus: Image appsvc/python:3.11_20260910.3.tuxprod is pulled from registry 10.1.0.6:13209
+2026-09-14T18:37:04.1207264+00:00 ContainerStatus: Container is starting.
+2026-09-14T18:37:04.1219600+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:37:04.1224109+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-09-14T18:37:04.1227982+00:00 ContainerStatus: Establishing network if not established already.
+2026-09-14T18:37:04.1236320+00:00 ContainerStatus: Mounting volumes.
+2026-09-14T18:37:04.1404030+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:04.1619814+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-09-14T18:37:04.1812749+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:04.2420339+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:04.2729024+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:04.3131308+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:04.6035020+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for srn-bhavya-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-09-14T18:37:04.6040500+00:00 ContainerStatus: Creating container.
+2026-09-14T18:37:04.6044568+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-09-14T18:37:04.6054519+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/14a149523448_srn-bhavya-app/stdout_a3925d8fb3b341ceb48681f90458e3c4.
+2026-09-14T18:37:04.6120829+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/14a149523448_srn-bhavya-app/stdout_a3925d8fb3b341ceb48681f90458e3c4.
+2026-09-14T18:37:04.6124492+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/14a149523448_srn-bhavya-app/stdout_a3925d8fb3b341ceb48681f90458e3c4 for reading in non-blocking mode.
+2026-09-14T18:37:04.6131650+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/14a149523448_srn-bhavya-app/stdout_a3925d8fb3b341ceb48681f90458e3c4.
+2026-09-14T18:37:04.6136752+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/14a149523448_srn-bhavya-app/stdout_a3925d8fb3b341ceb48681f90458e3c4.
+2026-09-14T18:37:04.6142881+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/14a149523448_srn-bhavya-app/stderr_d27db3935b0347829f5c7579a9056aca.
+2026-09-14T18:37:04.6144524+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/14a149523448_srn-bhavya-app/stderr_d27db3935b0347829f5c7579a9056aca.
+2026-09-14T18:37:04.6145572+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/14a149523448_srn-bhavya-app/stderr_d27db3935b0347829f5c7579a9056aca for reading in non-blocking mode.
+2026-09-14T18:37:04.6150078+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/14a149523448_srn-bhavya-app/stderr_d27db3935b0347829f5c7579a9056aca.
+2026-09-14T18:37:04.6151835+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/14a149523448_srn-bhavya-app/stderr_d27db3935b0347829f5c7579a9056aca.
+2026-09-14T18:37:04.6154043+00:00 ContainerStatus: Creating container with image: appsvc/python:3.11_20260910.3.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod
+2026-09-14T18:37:06.1691911+00:00 ContainerStatus: Starting container: 14a149523448_srn-bhavya-app.
+2026-09-14T18:37:06.3025850+00:00 ContainerStatus: Starting watchers and probes.
+2026-09-14T18:37:06.3094474+00:00 ContainerStatus: Starting metrics collection.
+2026-09-14T18:37:06.3122208+00:00 ContainerStatus: Container is running.
+2026-09-14T18:37:06.3126607+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:37:06.6089918+00:00 ContainerStatus: Container start method finished after 48617 ms.
+2026-09-14T18:37:06.6091310+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:37:06.6091596+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-09-14T18:37:07.4333921+00:00 ContainerStream:    _____                               
+2026-09-14T18:37:07.4499562+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-09-14T18:37:07.4499821+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-09-14T18:37:07.4499863+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-09-14T18:37:07.4500104+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-09-14T18:37:07.4500159+00:00 ContainerStream:         \/      \/                  \/ 
+2026-09-14T18:37:07.4500225+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-09-14T18:37:07.4500251+00:00 ContainerStream: 
+2026-09-14T18:37:07.4500309+00:00 ContainerStream: Documentation     : https://aka.ms/webapp-linux
+2026-09-14T18:37:07.4500343+00:00 ContainerStream: Python quickstart : https://aka.ms/python-qs
+2026-09-14T18:37:07.4500385+00:00 ContainerStream: Python version    : 3.11.15
+2026-09-14T18:37:07.4500429+00:00 ContainerStream: Instance name     : 10-141-2-250
+2026-09-14T18:37:07.4500480+00:00 ContainerStream: Instance id       : 18100db301644d601d376c8d9153a64aa7a54c803e21d5cf626b64e6b2b9ab0f
+2026-09-14T18:37:07.4500507+00:00 ContainerStream: 
+2026-09-14T18:37:07.4500537+00:00 ContainerStream: App port          : 8000
+2026-09-14T18:37:07.4500569+00:00 ContainerStream: Port selected by  : Default for this image
+2026-09-14T18:37:07.4500767+00:00 ContainerStream: (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-14T18:37:07.4500793+00:00 ContainerStream: 
+2026-09-14T18:37:07.4500854+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-09-14T18:37:07.4500881+00:00 ContainerStream: 
+2026-09-14T18:37:07.4500938+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:37:07.4500976+00:00 ContainerStream:  Run 'apphelp' for available commands and aliases.
+2026-09-14T18:37:07.4501011+00:00 ContainerStream:  Run 'install-nettools' to install networking utilities.
+2026-09-14T18:37:07.4501065+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:37:11.8641515+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-09-14T18:37:12.1253121+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-14T18:37:12.3073028+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-09-14T18:37:39.0775562+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-09-14T18:37:39.0858936+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-09-14T18:37:39.4546097+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-14T18:37:39.6053790+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-09-14T18:37:39.6054348+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-09-14T18:37:39.6174935+00:00 ContainerStream: done.
+2026-09-14T18:37:39.6559961+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-09-14T18:37:39.8679519+00:00 ContainerStream: Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 app:app
+2026-09-14T18:37:40.5270949+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-09-14T18:37:40.5271380+00:00 ContainerStream: Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 app:app'
+2026-09-14T18:37:41.5552176+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-09-14T18:37:41.5552578+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-09-14T18:37:41.5556581+00:00 ContainerStream: Build Operation ID: f333ea22-38b8-487f-b49f-c9ff9e76369a
+2026-09-14T18:37:42.2873607+00:00 ContainerStream: Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-14T18:37:42.4276139+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-09-14T18:37:42.6558001+00:00 ContainerStream: WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2026-09-14T18:37:42.6677545+00:00 ContainerStream: WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2026-09-14T18:37:44.1024264+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1872] [INFO] Starting gunicorn 24.1.1
+2026-09-14T18:37:44.1086194+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1872] [INFO] Listening at: http://0.0.0.0:8000 (1872)
+2026-09-14T18:37:44.1086452+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1872] [INFO] Using worker: sync
+2026-09-14T18:37:44.1170747+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1880] [INFO] Booting worker with pid: 1880
+2026-09-14T18:37:44.1306115+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1880] [ERROR] Exception in worker process
+2026-09-14T18:37:44.1498620+00:00 ContainerStream: Traceback (most recent call last):
+2026-09-14T18:37:44.1498706+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-14T18:37:44.1503040+00:00 ContainerStream:     worker.init_process()
+2026-09-14T18:37:44.1503205+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-14T18:37:44.1503266+00:00 ContainerStream:     self.load_wsgi()
+2026-09-14T18:37:44.1503295+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-14T18:37:44.1503320+00:00 ContainerStream:     self.wsgi = self.app.wsgi()
+2026-09-14T18:37:44.1503343+00:00 ContainerStream:                 ^^^^^^^^^^^^^^^
+2026-09-14T18:37:44.1503369+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-14T18:37:44.1503393+00:00 ContainerStream:     self.callable = self.load()
+2026-09-14T18:37:44.1503416+00:00 ContainerStream:                     ^^^^^^^^^^^
+2026-09-14T18:37:44.1503441+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-14T18:37:44.1503477+00:00 ContainerStream:     return self.load_wsgiapp()
+2026-09-14T18:37:44.1503500+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:37:44.1503617+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-14T18:37:44.1503737+00:00 ContainerStream:     return util.import_app(self.app_uri)
+2026-09-14T18:37:44.1503763+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:37:44.1503789+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-14T18:37:44.1503819+00:00 ContainerStream:     mod = importlib.import_module(module)
+2026-09-14T18:37:44.1503843+00:00 ContainerStream:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:37:44.1503869+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-09-14T18:37:44.1503894+00:00 ContainerStream:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-14T18:37:44.1503920+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:37:44.1503945+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-09-14T18:37:44.1503971+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-09-14T18:37:44.1504004+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2026-09-14T18:37:44.1504029+00:00 ContainerStream: ModuleNotFoundError: No module named 'app'
+2026-09-14T18:37:44.1504452+00:00 ContainerStream: No module named 'app'
+2026-09-14T18:37:44.1504487+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1880] [INFO] Worker exiting (pid: 1880)
+2026-09-14T18:37:44.3079514+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1872] [ERROR] Worker (pid:1880) exited with code 3.
+2026-09-14T18:37:44.3088209+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1872] [ERROR] Shutting down: Master
+2026-09-14T18:37:44.3092591+00:00 ContainerStream: [2026-09-14 18:37:44 +0000] [1872] [ERROR] Reason: Worker failed to boot.
+2026-09-14T18:37:44.5415344+00:00 ContainerStatus: Container has finished running with exit code: 3.
+2026-09-14T18:37:44.5532970+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-09-14T18:37:44.5774921+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-09-14T18:37:44.5795627+00:00 ContainerStatus: Stopping container: 14a149523448_srn-bhavya-app.
+2026-09-14T18:37:44.6995811+00:00 ContainerStatus: Deleting container: 14a149523448_srn-bhavya-app. Retry count = 0
+2026-09-14T18:37:45.0004176+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-09-14T18:37:45.0034971+00:00 ContainerStatus: Container is terminated. Total time elapsed: 445 ms.
+2026-09-14T18:37:45.0040512+00:00 ContainerStatus: Site container: srn-bhavya-app terminated during site startup.
+2026-09-14T18:37:45.0217645+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:37:45.0822288+00:00 ContainerStatus: Site startup probe failed after 38.3622971 seconds.
+2026-09-14T18:37:45.4425921+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:37:45.4598475+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-09-14T18:37:45.4704152+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:37:45.4814088+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:37:45.4822393+00:00 ContainerStatus: Site: srn-bhavya-app stopped.
+========== New Cold Start Attempt (2026-09-14T18:37:45.5132758+00:00) ==========
+2026-09-14T18:37:45.5132758+00:00 ContainerStatus: State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:37:45.7953413+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:37:46.0998957+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:37:46 (UTC), DetailsLevel: ERR
+2026-09-14T18:37:46.9708854+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:37:46 (UTC), DetailsLevel: ERR
+2026-09-14T18:37:52.3887884+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:37:46 (UTC), DetailsLevel: ERR
+2026-09-14T18:37:53.3521398+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:37:46 (UTC), DetailsLevel: ERR
+2026-09-14T18:37:53.3524869+00:00 ContainerStatus: Container start method called.
+2026-09-14T18:37:53.3528083+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:37:53.3531193+00:00 ContainerStatus: Establishing network.
+2026-09-14T18:37:53.3605109+00:00 ContainerStatus: Pulling image: appsvc/python:3.11_20260910.3.tuxprod.
+2026-09-14T18:37:53.9398738+00:00 ContainerStatus: Container is starting.
+2026-09-14T18:37:53.9465337+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Mounting volumes for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:37:53.9472146+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-09-14T18:37:53.9473158+00:00 ContainerStatus: Establishing network if not established already.
+2026-09-14T18:37:53.9473891+00:00 ContainerStatus: Mounting volumes.
+2026-09-14T18:37:53.9699288+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:54.0088343+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-09-14T18:37:54.0218843+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:54.0304970+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:54.0385097+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:54.0401956+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:37:54.6800314+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for srn-bhavya-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-09-14T18:37:54.6805948+00:00 ContainerStatus: Creating container.
+2026-09-14T18:37:54.6807661+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-09-14T18:37:54.6819790+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stdout_2f8f4049bc6f4d1e9bd45be870a18d65.
+2026-09-14T18:37:54.6887992+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stdout_2f8f4049bc6f4d1e9bd45be870a18d65.
+2026-09-14T18:37:54.6889503+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stdout_2f8f4049bc6f4d1e9bd45be870a18d65 for reading in non-blocking mode.
+2026-09-14T18:37:54.6891225+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stdout_2f8f4049bc6f4d1e9bd45be870a18d65.
+2026-09-14T18:37:54.6892140+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stdout_2f8f4049bc6f4d1e9bd45be870a18d65.
+2026-09-14T18:37:54.6906695+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stderr_2ded691bf68242b3a1ca1b301bd032a8.
+2026-09-14T18:37:54.6915686+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stderr_2ded691bf68242b3a1ca1b301bd032a8.
+2026-09-14T18:37:54.7013041+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stderr_2ded691bf68242b3a1ca1b301bd032a8 for reading in non-blocking mode.
+2026-09-14T18:37:54.7015258+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stderr_2ded691bf68242b3a1ca1b301bd032a8.
+2026-09-14T18:37:54.7018108+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/f4b46d2bfea4_srn-bhavya-app/stderr_2ded691bf68242b3a1ca1b301bd032a8.
+2026-09-14T18:37:54.7021948+00:00 ContainerStatus: Creating container with image: appsvc/python:3.11_20260910.3.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod
+2026-09-14T18:37:55.6214158+00:00 ContainerStatus: Starting container: f4b46d2bfea4_srn-bhavya-app.
+2026-09-14T18:37:55.7702359+00:00 ContainerStatus: Starting watchers and probes.
+2026-09-14T18:37:55.7709276+00:00 ContainerStatus: Starting metrics collection.
+2026-09-14T18:37:55.8103872+00:00 ContainerStatus: Container is running.
+2026-09-14T18:37:55.8105093+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:37:55.9406069+00:00 ContainerStream:    _____                               
+2026-09-14T18:37:55.9406306+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-09-14T18:37:55.9406329+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-09-14T18:37:55.9406348+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-09-14T18:37:55.9406368+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-09-14T18:37:55.9406387+00:00 ContainerStream:         \/      \/                  \/ 
+2026-09-14T18:37:55.9406404+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-09-14T18:37:55.9406421+00:00 ContainerStream: 
+2026-09-14T18:37:55.9406441+00:00 ContainerStream: Documentation     : https://aka.ms/webapp-linux
+2026-09-14T18:37:55.9406460+00:00 ContainerStream: Python quickstart : https://aka.ms/python-qs
+2026-09-14T18:37:55.9406478+00:00 ContainerStream: Python version    : 3.11.15
+2026-09-14T18:37:55.9406496+00:00 ContainerStream: Instance name     : 10-141-2-250
+2026-09-14T18:37:55.9406518+00:00 ContainerStream: Instance id       : 18100db301644d601d376c8d9153a64aa7a54c803e21d5cf626b64e6b2b9ab0f
+2026-09-14T18:37:55.9406546+00:00 ContainerStream: 
+2026-09-14T18:37:55.9406564+00:00 ContainerStream: App port          : 8000
+2026-09-14T18:37:55.9406583+00:00 ContainerStream: Port selected by  : Default for this image
+2026-09-14T18:37:55.9406603+00:00 ContainerStream: (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-14T18:37:55.9430125+00:00 ContainerStream: 
+2026-09-14T18:37:55.9430170+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-09-14T18:37:55.9430189+00:00 ContainerStream: 
+2026-09-14T18:37:55.9430246+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:37:55.9430267+00:00 ContainerStream:  Run 'apphelp' for available commands and aliases.
+2026-09-14T18:37:55.9430286+00:00 ContainerStream:  Run 'install-nettools' to install networking utilities.
+2026-09-14T18:37:55.9430312+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:37:56.0707846+00:00 ContainerStatus: Container start method finished after 2718 ms.
+2026-09-14T18:37:56.0709441+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:37:56.0709615+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-09-14T18:37:59.3864865+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-09-14T18:37:59.4050354+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-14T18:37:59.4460767+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-09-14T18:38:15.6027749+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-09-14T18:38:15.6028148+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-09-14T18:38:15.9944191+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-14T18:38:16.0326643+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-09-14T18:38:16.0327230+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-09-14T18:38:16.0594558+00:00 ContainerStream: done.
+2026-09-14T18:38:16.1188371+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-09-14T18:38:16.2532323+00:00 ContainerStream: Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 app:app
+2026-09-14T18:38:17.2812546+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-09-14T18:38:17.2814183+00:00 ContainerStream: Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 app:app'
+2026-09-14T18:38:18.9990003+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-09-14T18:38:18.9997313+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-09-14T18:38:19.0013539+00:00 ContainerStream: Build Operation ID: dedf7d62-032b-4623-bffc-a67431f94991
+2026-09-14T18:38:20.1293184+00:00 ContainerStream: Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-14T18:38:20.2689862+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-09-14T18:38:20.4795660+00:00 ContainerStream: WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2026-09-14T18:38:20.4813142+00:00 ContainerStream: WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2026-09-14T18:38:22.4926318+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1873] [INFO] Starting gunicorn 24.1.1
+2026-09-14T18:38:22.5010031+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1873] [INFO] Listening at: http://0.0.0.0:8000 (1873)
+2026-09-14T18:38:22.5013436+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1873] [INFO] Using worker: sync
+2026-09-14T18:38:22.5207368+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1879] [INFO] Booting worker with pid: 1879
+2026-09-14T18:38:22.5338590+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1879] [ERROR] Exception in worker process
+2026-09-14T18:38:22.5339072+00:00 ContainerStream: Traceback (most recent call last):
+2026-09-14T18:38:22.5339104+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-14T18:38:22.5339124+00:00 ContainerStream:     worker.init_process()
+2026-09-14T18:38:22.5339146+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-14T18:38:22.5339241+00:00 ContainerStream:     self.load_wsgi()
+2026-09-14T18:38:22.5339263+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-14T18:38:22.5339282+00:00 ContainerStream:     self.wsgi = self.app.wsgi()
+2026-09-14T18:38:22.5339300+00:00 ContainerStream:                 ^^^^^^^^^^^^^^^
+2026-09-14T18:38:22.5339321+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-14T18:38:22.5339339+00:00 ContainerStream:     self.callable = self.load()
+2026-09-14T18:38:22.5339358+00:00 ContainerStream:                     ^^^^^^^^^^^
+2026-09-14T18:38:22.5339380+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-14T18:38:22.5339398+00:00 ContainerStream:     return self.load_wsgiapp()
+2026-09-14T18:38:22.5339416+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:38:22.5339436+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-14T18:38:22.5339455+00:00 ContainerStream:     return util.import_app(self.app_uri)
+2026-09-14T18:38:22.5339474+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:38:22.5339505+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-14T18:38:22.5339524+00:00 ContainerStream:     mod = importlib.import_module(module)
+2026-09-14T18:38:22.5339542+00:00 ContainerStream:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:38:22.5339562+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-09-14T18:38:22.5339582+00:00 ContainerStream:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-14T18:38:22.5339601+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:38:22.5339621+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-09-14T18:38:22.5339640+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-09-14T18:38:22.5339659+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2026-09-14T18:38:22.5339678+00:00 ContainerStream: ModuleNotFoundError: No module named 'app'
+2026-09-14T18:38:22.5603804+00:00 ContainerStream: No module named 'app'
+2026-09-14T18:38:22.5604000+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1879] [INFO] Worker exiting (pid: 1879)
+2026-09-14T18:38:22.7033862+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1873] [ERROR] Worker (pid:1879) exited with code 3.
+2026-09-14T18:38:22.7100195+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1873] [ERROR] Shutting down: Master
+2026-09-14T18:38:22.7106772+00:00 ContainerStream: [2026-09-14 18:38:22 +0000] [1873] [ERROR] Reason: Worker failed to boot.
+2026-09-14T18:38:22.9006713+00:00 ContainerStatus: Container has finished running with exit code: 3.
+2026-09-14T18:38:22.9009034+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-09-14T18:38:22.9032483+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-09-14T18:38:22.9033415+00:00 ContainerStatus: Stopping container: f4b46d2bfea4_srn-bhavya-app.
+2026-09-14T18:38:23.0347187+00:00 ContainerStatus: Deleting container: f4b46d2bfea4_srn-bhavya-app. Retry count = 0
+2026-09-14T18:38:23.3040173+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-09-14T18:38:23.3115001+00:00 ContainerStatus: Container is terminated. Total time elapsed: 409 ms.
+2026-09-14T18:38:23.3120696+00:00 ContainerStatus: Site container: srn-bhavya-app terminated during site startup.
+2026-09-14T18:38:23.3509542+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:37:45, LastErrorDetails: Container exited with exit code 3 during startup after 38.7s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:38:23.4401890+00:00 ContainerStatus: Site startup probe failed after 27.359208 seconds.
+2026-09-14T18:38:23.7126259+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:38:23.7519460+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-09-14T18:38:23.7531225+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:38:23.7533287+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:38:23.7533499+00:00 ContainerStatus: Site: srn-bhavya-app stopped.
+========== New Cold Start Attempt (2026-09-14T18:38:23.7832931+00:00) ==========
+2026-09-14T18:38:23.7832931+00:00 ContainerStatus: State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:38:24.0213420+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:38:24.2725013+00:00 ContainerStatus: Site: srn-bhavya-app will be blocked for 1 minutes till 09/14/2026 18:39:24
+2026-09-14T18:38:24.2783593+00:00 ContainerStatus: State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site: srn-bhavya-app will be blocked for 1 minutes till 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:38:24.2938453+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:38:24 (UTC), DetailsLevel: WARN
+2026-09-14T18:38:25.2567426+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:38:24 (UTC), DetailsLevel: WARN
+2026-09-14T18:38:30.2714682+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:38:30.2716145+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:38:35.3284139+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:38:35.3284402+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:38:40.4042935+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:38:40.4043164+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:38:45.5155851+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:38:45.5157361+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:38:50.6150324+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:38:50.6152945+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:38:55.6780500+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:38:55.6781598+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:39:00.7742250+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:39:00.7742931+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:39:05.9098752+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:39:05.9098974+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:39:11.0039095+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:39:11.0039987+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:39:16.0880901+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:39:16.0882724+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:39:21.1816252+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:39:21.1874806+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:39:24.2726822+00:00 ContainerStatus: Site: srn-bhavya-app is unblocked.
+2026-09-14T18:39:26.2536217+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:39:28.4292130+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:39:24, DetailsLevel: WARN
+2026-09-14T18:39:28.4298801+00:00 ContainerStatus: Container start method called.
+2026-09-14T18:39:28.4302460+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:39:28.4305815+00:00 ContainerStatus: Establishing network.
+2026-09-14T18:39:28.4315098+00:00 ContainerStatus: Pulling image: appsvc/python:3.11_20260910.3.tuxprod.
+2026-09-14T18:39:29.5225833+00:00 ContainerStatus: Container is starting.
+2026-09-14T18:39:29.5229727+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Mounting volumes for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:39:29.5230699+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-09-14T18:39:29.5231610+00:00 ContainerStatus: Establishing network if not established already.
+2026-09-14T18:39:29.5302413+00:00 ContainerStatus: Mounting volumes.
+2026-09-14T18:39:29.5313103+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:39:29.5498897+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-09-14T18:39:29.5723758+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:39:29.6112598+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:39:29.6491263+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:39:29.6517449+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:39:29.9924592+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for srn-bhavya-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-09-14T18:39:29.9935827+00:00 ContainerStatus: Creating container.
+2026-09-14T18:39:29.9940331+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-09-14T18:39:29.9942340+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stdout_5a3a84834ab14b3ba7c0aecff5263cd3.
+2026-09-14T18:39:30.0004081+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stdout_5a3a84834ab14b3ba7c0aecff5263cd3.
+2026-09-14T18:39:30.0005160+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stdout_5a3a84834ab14b3ba7c0aecff5263cd3 for reading in non-blocking mode.
+2026-09-14T18:39:30.0006368+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stdout_5a3a84834ab14b3ba7c0aecff5263cd3.
+2026-09-14T18:39:30.0007315+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stdout_5a3a84834ab14b3ba7c0aecff5263cd3.
+2026-09-14T18:39:30.0026578+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stderr_b75b5c2cc0024e3cac2f99b4bac571eb.
+2026-09-14T18:39:30.0027909+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stderr_b75b5c2cc0024e3cac2f99b4bac571eb.
+2026-09-14T18:39:30.0034690+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stderr_b75b5c2cc0024e3cac2f99b4bac571eb for reading in non-blocking mode.
+2026-09-14T18:39:30.0035748+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stderr_b75b5c2cc0024e3cac2f99b4bac571eb.
+2026-09-14T18:39:30.0036587+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/6d4d883f8bf0_srn-bhavya-app/stderr_b75b5c2cc0024e3cac2f99b4bac571eb.
+2026-09-14T18:39:30.0108820+00:00 ContainerStatus: Creating container with image: appsvc/python:3.11_20260910.3.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod
+2026-09-14T18:39:30.9712553+00:00 ContainerStatus: Starting container: 6d4d883f8bf0_srn-bhavya-app.
+2026-09-14T18:39:31.0474524+00:00 ContainerStatus: Starting watchers and probes.
+2026-09-14T18:39:31.0481704+00:00 ContainerStatus: Starting metrics collection.
+2026-09-14T18:39:31.0565273+00:00 ContainerStatus: Container is running.
+2026-09-14T18:39:31.0572331+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:39:31.1389884+00:00 ContainerStatus: Container start method finished after 2708 ms.
+2026-09-14T18:39:31.1391167+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:39:31.1391339+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-09-14T18:39:31.3689997+00:00 ContainerStream:    _____                               
+2026-09-14T18:39:31.3690230+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-09-14T18:39:31.3690256+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-09-14T18:39:31.3690275+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-09-14T18:39:31.3690292+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-09-14T18:39:31.3690309+00:00 ContainerStream:         \/      \/                  \/ 
+2026-09-14T18:39:31.3690325+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-09-14T18:39:31.3690342+00:00 ContainerStream: 
+2026-09-14T18:39:31.3690359+00:00 ContainerStream: Documentation     : https://aka.ms/webapp-linux
+2026-09-14T18:39:31.3690377+00:00 ContainerStream: Python quickstart : https://aka.ms/python-qs
+2026-09-14T18:39:31.3690464+00:00 ContainerStream: Python version    : 3.11.15
+2026-09-14T18:39:31.3690484+00:00 ContainerStream: Instance name     : 10-141-2-250
+2026-09-14T18:39:31.3690506+00:00 ContainerStream: Instance id       : 18100db301644d601d376c8d9153a64aa7a54c803e21d5cf626b64e6b2b9ab0f
+2026-09-14T18:39:31.3690523+00:00 ContainerStream: 
+2026-09-14T18:39:31.3690540+00:00 ContainerStream: App port          : 8000
+2026-09-14T18:39:31.3690557+00:00 ContainerStream: Port selected by  : Default for this image
+2026-09-14T18:39:31.3690575+00:00 ContainerStream: (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-14T18:39:31.3690590+00:00 ContainerStream: 
+2026-09-14T18:39:31.3690607+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-09-14T18:39:31.3690622+00:00 ContainerStream: 
+2026-09-14T18:39:31.3690653+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:39:31.3690671+00:00 ContainerStream:  Run 'apphelp' for available commands and aliases.
+2026-09-14T18:39:31.3690689+00:00 ContainerStream:  Run 'install-nettools' to install networking utilities.
+2026-09-14T18:39:31.3690730+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:39:33.6981250+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-09-14T18:39:33.7487597+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-14T18:39:33.8749041+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-09-14T18:39:48.3903376+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-09-14T18:39:48.3903592+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-09-14T18:39:48.6790071+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-14T18:39:48.7705479+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-09-14T18:39:48.7705830+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-09-14T18:39:48.7787025+00:00 ContainerStream: done.
+2026-09-14T18:39:48.8105788+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-09-14T18:39:48.9912904+00:00 ContainerStream: Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 app:app
+2026-09-14T18:39:49.4408898+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-09-14T18:39:49.4495789+00:00 ContainerStream: Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 app:app'
+2026-09-14T18:39:51.0124079+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-09-14T18:39:51.0129689+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-09-14T18:39:51.0218497+00:00 ContainerStream: Build Operation ID: dcfa61a0-b186-481a-82d8-894af9f11891
+2026-09-14T18:39:52.6159158+00:00 ContainerStream: Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-14T18:39:52.7507249+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-09-14T18:39:52.9614652+00:00 ContainerStream: WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2026-09-14T18:39:52.9631364+00:00 ContainerStream: WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2026-09-14T18:39:55.8230902+00:00 ContainerStream: [2026-09-14 18:39:55 +0000] [1872] [INFO] Starting gunicorn 24.1.1
+2026-09-14T18:39:55.8324858+00:00 ContainerStream: [2026-09-14 18:39:55 +0000] [1872] [INFO] Listening at: http://0.0.0.0:8000 (1872)
+2026-09-14T18:39:55.8325038+00:00 ContainerStream: [2026-09-14 18:39:55 +0000] [1872] [INFO] Using worker: sync
+2026-09-14T18:39:55.8711621+00:00 ContainerStream: [2026-09-14 18:39:55 +0000] [1879] [INFO] Booting worker with pid: 1879
+2026-09-14T18:39:55.9125312+00:00 ContainerStream: [2026-09-14 18:39:55 +0000] [1879] [ERROR] Exception in worker process
+2026-09-14T18:39:55.9125702+00:00 ContainerStream: Traceback (most recent call last):
+2026-09-14T18:39:55.9125799+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-14T18:39:55.9125823+00:00 ContainerStream:     worker.init_process()
+2026-09-14T18:39:55.9125845+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-14T18:39:55.9125861+00:00 ContainerStream:     self.load_wsgi()
+2026-09-14T18:39:55.9125881+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-14T18:39:55.9125898+00:00 ContainerStream:     self.wsgi = self.app.wsgi()
+2026-09-14T18:39:55.9125914+00:00 ContainerStream:                 ^^^^^^^^^^^^^^^
+2026-09-14T18:39:55.9125933+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-14T18:39:55.9125949+00:00 ContainerStream:     self.callable = self.load()
+2026-09-14T18:39:55.9125965+00:00 ContainerStream:                     ^^^^^^^^^^^
+2026-09-14T18:39:55.9125984+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-14T18:39:55.9126000+00:00 ContainerStream:     return self.load_wsgiapp()
+2026-09-14T18:39:55.9126016+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:39:55.9126049+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-14T18:39:55.9126069+00:00 ContainerStream:     return util.import_app(self.app_uri)
+2026-09-14T18:39:55.9126085+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:39:55.9126104+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-14T18:39:55.9126121+00:00 ContainerStream:     mod = importlib.import_module(module)
+2026-09-14T18:39:55.9126138+00:00 ContainerStream:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:39:55.9126156+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-09-14T18:39:55.9126175+00:00 ContainerStream:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-14T18:39:55.9126192+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:39:55.9126212+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-09-14T18:39:55.9126230+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-09-14T18:39:55.9126248+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2026-09-14T18:39:55.9126265+00:00 ContainerStream: ModuleNotFoundError: No module named 'app'
+2026-09-14T18:39:55.9218316+00:00 ContainerStream: No module named 'app'
+2026-09-14T18:39:55.9218607+00:00 ContainerStream: [2026-09-14 18:39:55 +0000] [1879] [INFO] Worker exiting (pid: 1879)
+2026-09-14T18:39:56.2533912+00:00 ContainerStream: [2026-09-14 18:39:56 +0000] [1872] [ERROR] Worker (pid:1879) exited with code 3.
+2026-09-14T18:39:56.2534141+00:00 ContainerStream: [2026-09-14 18:39:56 +0000] [1872] [ERROR] Shutting down: Master
+2026-09-14T18:39:56.2534168+00:00 ContainerStream: [2026-09-14 18:39:56 +0000] [1872] [ERROR] Reason: Worker failed to boot.
+2026-09-14T18:39:56.5027758+00:00 ContainerStatus: Container has finished running with exit code: 3.
+2026-09-14T18:39:56.5221734+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-09-14T18:39:56.5432719+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-09-14T18:39:56.5433893+00:00 ContainerStatus: Stopping container: 6d4d883f8bf0_srn-bhavya-app.
+2026-09-14T18:39:56.8409610+00:00 ContainerStatus: Deleting container: 6d4d883f8bf0_srn-bhavya-app. Retry count = 0
+2026-09-14T18:39:57.2526130+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-09-14T18:39:57.2613867+00:00 ContainerStatus: Container is terminated. Total time elapsed: 718 ms.
+2026-09-14T18:39:57.2616089+00:00 ContainerStatus: Site container: srn-bhavya-app terminated during site startup.
+2026-09-14T18:39:57.2631696+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:38:23, LastErrorDetails: Container exited with exit code 3 during startup after 27.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:39:57.3034994+00:00 ContainerStatus: Site startup probe failed after 26.1638156 seconds.
+2026-09-14T18:39:57.5442672+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:39:57.8295053+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-09-14T18:39:57.8308267+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:39:57.8310529+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:39:57.8310763+00:00 ContainerStatus: Site: srn-bhavya-app stopped.
+========== New Cold Start Attempt (2026-09-14T18:39:57.8500884+00:00) ==========
+2026-09-14T18:39:57.8500884+00:00 ContainerStatus: State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:39:58.0799171+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:39:58.4949627+00:00 ContainerStatus: Site: srn-bhavya-app will be blocked for 1 minutes till 09/14/2026 18:40:58
+2026-09-14T18:39:58.4950598+00:00 ContainerStatus: State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site: srn-bhavya-app will be blocked for 1 minutes till 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:39:58.4952934+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:39:58 (UTC), DetailsLevel: WARN
+2026-09-14T18:39:59.4695099+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:39:58 (UTC), DetailsLevel: WARN
+2026-09-14T18:40:04.4156340+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:04.4160763+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:09.5558023+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:09.5558736+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:14.6244497+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:14.6244730+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:19.7115293+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:19.7115936+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:24.7978201+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:24.7979061+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:29.8424429+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:29.8425130+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:34.9587155+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:34.9588430+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:40.0129744+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:40.0132409+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:45.1154795+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:45.1155422+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:50.2436114+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:50.2436349+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:55.3421825+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:40:55.3423144+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:40:58.4951997+00:00 ContainerStatus: Site: srn-bhavya-app is unblocked.
+2026-09-14T18:41:00.4071556+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:41:01.8432190+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:40:58, DetailsLevel: WARN
+2026-09-14T18:41:01.8526923+00:00 ContainerStatus: Container start method called.
+2026-09-14T18:41:01.8529097+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:41:01.8531267+00:00 ContainerStatus: Establishing network.
+2026-09-14T18:41:01.8532293+00:00 ContainerStatus: Pulling image: appsvc/python:3.11_20260910.3.tuxprod.
+2026-09-14T18:41:02.7783256+00:00 ContainerStatus: Container is starting.
+2026-09-14T18:41:02.7785056+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Mounting volumes for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:41:02.7786071+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-09-14T18:41:02.7787039+00:00 ContainerStatus: Establishing network if not established already.
+2026-09-14T18:41:02.7787916+00:00 ContainerStatus: Mounting volumes.
+2026-09-14T18:41:02.7788824+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:41:02.7990389+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-09-14T18:41:02.8212165+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:41:02.8216074+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:41:02.8421981+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:41:02.9189777+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:41:03.4825345+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for srn-bhavya-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-09-14T18:41:03.4828448+00:00 ContainerStatus: Creating container.
+2026-09-14T18:41:03.4831089+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-09-14T18:41:03.4835896+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stdout_07237254b6264c0cb0ab743bde8694e4.
+2026-09-14T18:41:03.5225641+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stdout_07237254b6264c0cb0ab743bde8694e4.
+2026-09-14T18:41:03.5233963+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stdout_07237254b6264c0cb0ab743bde8694e4 for reading in non-blocking mode.
+2026-09-14T18:41:03.5239562+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stdout_07237254b6264c0cb0ab743bde8694e4.
+2026-09-14T18:41:03.5243575+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stdout_07237254b6264c0cb0ab743bde8694e4.
+2026-09-14T18:41:03.5248960+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stderr_21fc2c9dd86f4a58900859e86409ac88.
+2026-09-14T18:41:03.5253823+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stderr_21fc2c9dd86f4a58900859e86409ac88.
+2026-09-14T18:41:03.5256336+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stderr_21fc2c9dd86f4a58900859e86409ac88 for reading in non-blocking mode.
+2026-09-14T18:41:03.5315076+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stderr_21fc2c9dd86f4a58900859e86409ac88.
+2026-09-14T18:41:03.5318993+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/35b3bc5cc0f3_srn-bhavya-app/stderr_21fc2c9dd86f4a58900859e86409ac88.
+2026-09-14T18:41:03.5326772+00:00 ContainerStatus: Creating container with image: appsvc/python:3.11_20260910.3.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod
+2026-09-14T18:41:04.5695846+00:00 ContainerStatus: Starting container: 35b3bc5cc0f3_srn-bhavya-app.
+2026-09-14T18:41:04.6397094+00:00 ContainerStatus: Starting watchers and probes.
+2026-09-14T18:41:04.6496566+00:00 ContainerStatus: Starting metrics collection.
+2026-09-14T18:41:04.6498886+00:00 ContainerStatus: Container is running.
+2026-09-14T18:41:04.6499539+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:41:04.8799075+00:00 ContainerStatus: Container start method finished after 2988 ms.
+2026-09-14T18:41:04.8800716+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:41:04.8878431+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-09-14T18:41:04.9976355+00:00 ContainerStream:    _____                               
+2026-09-14T18:41:04.9976587+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-09-14T18:41:04.9976609+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-09-14T18:41:04.9976627+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-09-14T18:41:04.9976644+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-09-14T18:41:04.9976661+00:00 ContainerStream:         \/      \/                  \/ 
+2026-09-14T18:41:04.9976677+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-09-14T18:41:04.9976694+00:00 ContainerStream: 
+2026-09-14T18:41:04.9976712+00:00 ContainerStream: Documentation     : https://aka.ms/webapp-linux
+2026-09-14T18:41:04.9976729+00:00 ContainerStream: Python quickstart : https://aka.ms/python-qs
+2026-09-14T18:41:04.9976819+00:00 ContainerStream: Python version    : 3.11.15
+2026-09-14T18:41:04.9976838+00:00 ContainerStream: Instance name     : 10-141-2-250
+2026-09-14T18:41:04.9976859+00:00 ContainerStream: Instance id       : 18100db301644d601d376c8d9153a64aa7a54c803e21d5cf626b64e6b2b9ab0f
+2026-09-14T18:41:04.9976874+00:00 ContainerStream: 
+2026-09-14T18:41:04.9987840+00:00 ContainerStream: App port          : 8000
+2026-09-14T18:41:04.9987905+00:00 ContainerStream: Port selected by  : Default for this image
+2026-09-14T18:41:04.9987928+00:00 ContainerStream: (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-14T18:41:04.9987944+00:00 ContainerStream: 
+2026-09-14T18:41:04.9987962+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-09-14T18:41:04.9987978+00:00 ContainerStream: 
+2026-09-14T18:41:04.9988018+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:41:04.9988038+00:00 ContainerStream:  Run 'apphelp' for available commands and aliases.
+2026-09-14T18:41:04.9988055+00:00 ContainerStream:  Run 'install-nettools' to install networking utilities.
+2026-09-14T18:41:04.9988126+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:41:07.3744299+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-09-14T18:41:07.4370106+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-14T18:41:07.6387919+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-09-14T18:41:23.4907788+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-09-14T18:41:23.5170874+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-09-14T18:41:23.8488019+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-14T18:41:24.0271838+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-09-14T18:41:24.0272206+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-09-14T18:41:24.0272228+00:00 ContainerStream: done.
+2026-09-14T18:41:24.1188296+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-09-14T18:41:24.3207262+00:00 ContainerStream: Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 app:app
+2026-09-14T18:41:25.5724133+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-09-14T18:41:25.5814140+00:00 ContainerStream: Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 app:app'
+2026-09-14T18:41:27.2791533+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-09-14T18:41:27.2801657+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-09-14T18:41:27.2801758+00:00 ContainerStream: Build Operation ID: 99b5bc78-341e-4963-a9a1-252ecf441a9b
+2026-09-14T18:41:29.4713218+00:00 ContainerStream: Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-14T18:41:29.6096643+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-09-14T18:41:29.9612298+00:00 ContainerStream: WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2026-09-14T18:41:29.9716533+00:00 ContainerStream: WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2026-09-14T18:41:31.1499539+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1877] [INFO] Starting gunicorn 24.1.1
+2026-09-14T18:41:31.1525088+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1877] [INFO] Listening at: http://0.0.0.0:8000 (1877)
+2026-09-14T18:41:31.1528068+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1877] [INFO] Using worker: sync
+2026-09-14T18:41:31.1622234+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1880] [INFO] Booting worker with pid: 1880
+2026-09-14T18:41:31.1738251+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1880] [ERROR] Exception in worker process
+2026-09-14T18:41:31.1738531+00:00 ContainerStream: Traceback (most recent call last):
+2026-09-14T18:41:31.1738801+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-14T18:41:31.1738821+00:00 ContainerStream:     worker.init_process()
+2026-09-14T18:41:31.1738842+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-14T18:41:31.1738858+00:00 ContainerStream:     self.load_wsgi()
+2026-09-14T18:41:31.1738879+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-14T18:41:31.1738895+00:00 ContainerStream:     self.wsgi = self.app.wsgi()
+2026-09-14T18:41:31.1738912+00:00 ContainerStream:                 ^^^^^^^^^^^^^^^
+2026-09-14T18:41:31.1738931+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-14T18:41:31.1738947+00:00 ContainerStream:     self.callable = self.load()
+2026-09-14T18:41:31.1738963+00:00 ContainerStream:                     ^^^^^^^^^^^
+2026-09-14T18:41:31.1738982+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-14T18:41:31.1738999+00:00 ContainerStream:     return self.load_wsgiapp()
+2026-09-14T18:41:31.1739029+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:41:31.1739052+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-14T18:41:31.1739069+00:00 ContainerStream:     return util.import_app(self.app_uri)
+2026-09-14T18:41:31.1739086+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:41:31.1739105+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-14T18:41:31.1739122+00:00 ContainerStream:     mod = importlib.import_module(module)
+2026-09-14T18:41:31.1739139+00:00 ContainerStream:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:41:31.1739157+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-09-14T18:41:31.1739175+00:00 ContainerStream:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-14T18:41:31.1739192+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:41:31.1739210+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-09-14T18:41:31.1739228+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-09-14T18:41:31.1739246+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2026-09-14T18:41:31.1739275+00:00 ContainerStream: ModuleNotFoundError: No module named 'app'
+2026-09-14T18:41:31.1809029+00:00 ContainerStream: No module named 'app'
+2026-09-14T18:41:31.1809207+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1880] [INFO] Worker exiting (pid: 1880)
+2026-09-14T18:41:31.3121347+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1877] [ERROR] Worker (pid:1880) exited with code 3.
+2026-09-14T18:41:31.3484639+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1877] [ERROR] Shutting down: Master
+2026-09-14T18:41:31.3484848+00:00 ContainerStream: [2026-09-14 18:41:31 +0000] [1877] [ERROR] Reason: Worker failed to boot.
+2026-09-14T18:41:31.4825923+00:00 ContainerStatus: Container has finished running with exit code: 3.
+2026-09-14T18:41:31.4833372+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-09-14T18:41:31.4922946+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-09-14T18:41:31.4927629+00:00 ContainerStatus: Stopping container: 35b3bc5cc0f3_srn-bhavya-app.
+2026-09-14T18:41:31.5663602+00:00 ContainerStatus: Deleting container: 35b3bc5cc0f3_srn-bhavya-app. Retry count = 0
+2026-09-14T18:41:31.7883265+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-09-14T18:41:31.7931272+00:00 ContainerStatus: Container is terminated. Total time elapsed: 307 ms.
+2026-09-14T18:41:31.7935127+00:00 ContainerStatus: Site container: srn-bhavya-app terminated during site startup.
+2026-09-14T18:41:31.7959502+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:39:57, LastErrorDetails: Container exited with exit code 3 during startup after 26.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:41:31.8283454+00:00 ContainerStatus: Site startup probe failed after 26.939415 seconds.
+2026-09-14T18:41:32.0081236+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:41:32.0268854+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-09-14T18:41:32.0272747+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:41:32.0275303+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:41:32.0275533+00:00 ContainerStatus: Site: srn-bhavya-app stopped.
+========== New Cold Start Attempt (2026-09-14T18:41:32.0570414+00:00) ==========
+2026-09-14T18:41:32.0570414+00:00 ContainerStatus: State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:41:32.2556959+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:41:32.4725005+00:00 ContainerStatus: Site: srn-bhavya-app will be blocked for 2 minutes till 09/14/2026 18:43:32
+2026-09-14T18:41:32.4726438+00:00 ContainerStatus: State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site: srn-bhavya-app will be blocked for 2 minutes till 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:41:32.4728187+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:41:32 (UTC), DetailsLevel: WARN
+2026-09-14T18:41:33.0766612+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:41:32 (UTC), DetailsLevel: WARN
+2026-09-14T18:41:38.0953665+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:41:38.0954026+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:41:43.1326242+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:41:43.1326495+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:41:48.2407729+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:41:48.2408073+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:41:53.3812099+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:41:53.3812404+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:41:58.4267488+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:41:58.4268676+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:03.5003378+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:03.5004365+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:08.5412621+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:08.5412906+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:13.6964348+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:13.6964662+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:18.9786247+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:18.9786955+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:24.0942250+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:24.0943120+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:29.1558847+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:29.1559532+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:34.2593882+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:34.2597292+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:39.3749130+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:39.3750718+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:44.4348629+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:44.4373961+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:49.5174945+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:49.5176346+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:54.6039075+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:54.6039974+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:42:59.6542511+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:42:59.6543803+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:43:04.7002990+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:43:04.7003328+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:43:09.7477376+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:43:09.7477715+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:43:14.8259994+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:43:14.8261264+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:43:19.9354393+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:43:19.9355544+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:43:25.0153616+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:43:25.0160149+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:43:30.2409876+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:43:30.2410148+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:43:32.4714044+00:00 ContainerStatus: Site: srn-bhavya-app is unblocked.
+2026-09-14T18:43:35.2956368+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:43:37.2091968+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:43:32, DetailsLevel: WARN
+2026-09-14T18:43:37.2293118+00:00 ContainerStatus: Container start method called.
+2026-09-14T18:43:37.2295140+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:43:37.2297654+00:00 ContainerStatus: Establishing network.
+2026-09-14T18:43:37.2299586+00:00 ContainerStatus: Pulling image: appsvc/python:3.11_20260910.3.tuxprod.
+2026-09-14T18:43:38.9243066+00:00 ContainerStatus: Container is starting.
+2026-09-14T18:43:38.9244278+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Mounting volumes for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:43:38.9807059+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-09-14T18:43:38.9807953+00:00 ContainerStatus: Establishing network if not established already.
+2026-09-14T18:43:38.9808648+00:00 ContainerStatus: Mounting volumes.
+2026-09-14T18:43:38.9828152+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:43:39.0319649+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-09-14T18:43:39.0846115+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:43:39.0909417+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:43:39.1120746+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:43:39.1911498+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:43:40.2126584+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for srn-bhavya-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-09-14T18:43:40.2127245+00:00 ContainerStatus: Creating container.
+2026-09-14T18:43:40.2127653+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-09-14T18:43:40.2128091+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stdout_93337b3d1cf14da6af01176d05814a38.
+2026-09-14T18:43:40.2150699+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stdout_93337b3d1cf14da6af01176d05814a38.
+2026-09-14T18:43:40.2252426+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stdout_93337b3d1cf14da6af01176d05814a38 for reading in non-blocking mode.
+2026-09-14T18:43:40.2255637+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stdout_93337b3d1cf14da6af01176d05814a38.
+2026-09-14T18:43:40.2256155+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stdout_93337b3d1cf14da6af01176d05814a38.
+2026-09-14T18:43:40.2320218+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stderr_13f334c739bf4020859737e0b6b8e2b4.
+2026-09-14T18:43:40.2321349+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stderr_13f334c739bf4020859737e0b6b8e2b4.
+2026-09-14T18:43:40.2321692+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stderr_13f334c739bf4020859737e0b6b8e2b4 for reading in non-blocking mode.
+2026-09-14T18:43:40.2322242+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stderr_13f334c739bf4020859737e0b6b8e2b4.
+2026-09-14T18:43:40.2322565+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/ef4b7b15f80b_srn-bhavya-app/stderr_13f334c739bf4020859737e0b6b8e2b4.
+2026-09-14T18:43:40.2325924+00:00 ContainerStatus: Creating container with image: appsvc/python:3.11_20260910.3.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod
+2026-09-14T18:43:41.5344553+00:00 ContainerStatus: Starting container: ef4b7b15f80b_srn-bhavya-app.
+2026-09-14T18:43:41.6006385+00:00 ContainerStatus: Starting watchers and probes.
+2026-09-14T18:43:41.6092706+00:00 ContainerStatus: Starting metrics collection.
+2026-09-14T18:43:41.6097765+00:00 ContainerStatus: Container is running.
+2026-09-14T18:43:41.6104460+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:43:41.7780929+00:00 ContainerStatus: Container start method finished after 4548 ms.
+2026-09-14T18:43:41.7791169+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:43:41.7791952+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-09-14T18:43:41.9422069+00:00 ContainerStream:    _____                               
+2026-09-14T18:43:41.9422488+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-09-14T18:43:41.9422512+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-09-14T18:43:41.9422530+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-09-14T18:43:41.9422546+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-09-14T18:43:41.9422667+00:00 ContainerStream:         \/      \/                  \/ 
+2026-09-14T18:43:41.9422687+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-09-14T18:43:41.9422703+00:00 ContainerStream: 
+2026-09-14T18:43:41.9422720+00:00 ContainerStream: Documentation     : https://aka.ms/webapp-linux
+2026-09-14T18:43:41.9422737+00:00 ContainerStream: Python quickstart : https://aka.ms/python-qs
+2026-09-14T18:43:41.9422754+00:00 ContainerStream: Python version    : 3.11.15
+2026-09-14T18:43:41.9422771+00:00 ContainerStream: Instance name     : 10-141-2-250
+2026-09-14T18:43:41.9422790+00:00 ContainerStream: Instance id       : 18100db301644d601d376c8d9153a64aa7a54c803e21d5cf626b64e6b2b9ab0f
+2026-09-14T18:43:41.9422806+00:00 ContainerStream: 
+2026-09-14T18:43:41.9422823+00:00 ContainerStream: App port          : 8000
+2026-09-14T18:43:41.9422840+00:00 ContainerStream: Port selected by  : Default for this image
+2026-09-14T18:43:41.9422858+00:00 ContainerStream: (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-14T18:43:41.9422873+00:00 ContainerStream: 
+2026-09-14T18:43:41.9422890+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-09-14T18:43:41.9422916+00:00 ContainerStream: 
+2026-09-14T18:43:41.9422945+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:43:41.9422964+00:00 ContainerStream:  Run 'apphelp' for available commands and aliases.
+2026-09-14T18:43:41.9422982+00:00 ContainerStream:  Run 'install-nettools' to install networking utilities.
+2026-09-14T18:43:41.9423008+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:43:46.0804290+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-09-14T18:43:46.1109242+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-14T18:43:46.1711814+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-09-14T18:44:01.1838019+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-09-14T18:44:01.1838678+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-09-14T18:44:01.5884963+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-14T18:44:01.7284287+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-09-14T18:44:01.7284520+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-09-14T18:44:01.7465113+00:00 ContainerStream: done.
+2026-09-14T18:44:01.7564521+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-09-14T18:44:01.9696760+00:00 ContainerStream: Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 app:app
+2026-09-14T18:44:02.7112639+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-09-14T18:44:02.7274887+00:00 ContainerStream: Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 app:app'
+2026-09-14T18:44:03.4906103+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-09-14T18:44:03.4911225+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-09-14T18:44:03.4913188+00:00 ContainerStream: Build Operation ID: 38b34ebf-1109-433d-bc74-aa0ae3468393
+2026-09-14T18:44:04.4649028+00:00 ContainerStream: Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-14T18:44:04.6139164+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-09-14T18:44:05.1797089+00:00 ContainerStream: WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2026-09-14T18:44:05.1797326+00:00 ContainerStream: WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2026-09-14T18:44:07.4163929+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1872] [INFO] Starting gunicorn 24.1.1
+2026-09-14T18:44:07.4213147+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1872] [INFO] Listening at: http://0.0.0.0:8000 (1872)
+2026-09-14T18:44:07.4214798+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1872] [INFO] Using worker: sync
+2026-09-14T18:44:07.4309679+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1879] [INFO] Booting worker with pid: 1879
+2026-09-14T18:44:07.4411444+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1879] [ERROR] Exception in worker process
+2026-09-14T18:44:07.4411726+00:00 ContainerStream: Traceback (most recent call last):
+2026-09-14T18:44:07.4411820+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-14T18:44:07.4411839+00:00 ContainerStream:     worker.init_process()
+2026-09-14T18:44:07.4411859+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-14T18:44:07.4411876+00:00 ContainerStream:     self.load_wsgi()
+2026-09-14T18:44:07.4411896+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-14T18:44:07.4411913+00:00 ContainerStream:     self.wsgi = self.app.wsgi()
+2026-09-14T18:44:07.4411931+00:00 ContainerStream:                 ^^^^^^^^^^^^^^^
+2026-09-14T18:44:07.4411950+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-14T18:44:07.4411967+00:00 ContainerStream:     self.callable = self.load()
+2026-09-14T18:44:07.4411984+00:00 ContainerStream:                     ^^^^^^^^^^^
+2026-09-14T18:44:07.4412003+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-14T18:44:07.4412021+00:00 ContainerStream:     return self.load_wsgiapp()
+2026-09-14T18:44:07.4412048+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:44:07.4412070+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-14T18:44:07.4412088+00:00 ContainerStream:     return util.import_app(self.app_uri)
+2026-09-14T18:44:07.4412105+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:44:07.4412124+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-14T18:44:07.4412142+00:00 ContainerStream:     mod = importlib.import_module(module)
+2026-09-14T18:44:07.4412159+00:00 ContainerStream:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:44:07.4412178+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-09-14T18:44:07.4412197+00:00 ContainerStream:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-14T18:44:07.4412215+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:44:07.4412233+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-09-14T18:44:07.4412251+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-09-14T18:44:07.4412269+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2026-09-14T18:44:07.4412295+00:00 ContainerStream: ModuleNotFoundError: No module named 'app'
+2026-09-14T18:44:07.4422447+00:00 ContainerStream: No module named 'app'
+2026-09-14T18:44:07.4426409+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1879] [INFO] Worker exiting (pid: 1879)
+2026-09-14T18:44:07.5123260+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1872] [ERROR] Worker (pid:1879) exited with code 3.
+2026-09-14T18:44:07.5131686+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1872] [ERROR] Shutting down: Master
+2026-09-14T18:44:07.5135832+00:00 ContainerStream: [2026-09-14 18:44:07 +0000] [1872] [ERROR] Reason: Worker failed to boot.
+2026-09-14T18:44:07.6252652+00:00 ContainerStatus: Container has finished running with exit code: 3.
+2026-09-14T18:44:07.6256277+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-09-14T18:44:07.6324125+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-09-14T18:44:07.6325715+00:00 ContainerStatus: Stopping container: ef4b7b15f80b_srn-bhavya-app.
+2026-09-14T18:44:07.7508897+00:00 ContainerStatus: Deleting container: ef4b7b15f80b_srn-bhavya-app. Retry count = 0
+2026-09-14T18:44:08.1522532+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-09-14T18:44:08.1551468+00:00 ContainerStatus: Container is terminated. Total time elapsed: 528 ms.
+2026-09-14T18:44:08.1613835+00:00 ContainerStatus: Site container: srn-bhavya-app terminated during site startup.
+2026-09-14T18:44:08.1651600+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:41:32, LastErrorDetails: Container exited with exit code 3 during startup after 27.2s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:44:08.2046314+00:00 ContainerStatus: Site startup probe failed after 26.4245508 seconds.
+2026-09-14T18:44:08.3542661+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:44:08.3652836+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-09-14T18:44:08.3821198+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:44:08.3827365+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:44:08.3827580+00:00 ContainerStatus: Site: srn-bhavya-app stopped.
+========== New Cold Start Attempt (2026-09-14T18:44:08.4033317+00:00) ==========
+2026-09-14T18:44:08.4033317+00:00 ContainerStatus: State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:44:08.6557846+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:44:08.9115042+00:00 ContainerStatus: Site: srn-bhavya-app will be blocked for 2 minutes till 09/14/2026 18:46:08
+2026-09-14T18:44:08.9173733+00:00 ContainerStatus: State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site: srn-bhavya-app will be blocked for 2 minutes till 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:08.9180138+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:44:08 (UTC), DetailsLevel: WARN
+2026-09-14T18:44:09.3875295+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:44:08 (UTC), DetailsLevel: WARN
+2026-09-14T18:44:14.6383245+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:14.6393813+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:44:19.7570322+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:19.7571138+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:44:24.8303066+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:24.8303337+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:44:29.9029146+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:29.9030423+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:44:34.9643142+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:34.9644740+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:44:40.0623932+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:40.0626405+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:44:45.1086821+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:45.1087093+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:44:50.1863356+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:50.1863640+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:44:55.2434728+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:44:55.2464248+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:45:00.3470379+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:45:00.3470623+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:45:05.4459842+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:45:05.4460617+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:45:10.5231707+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:45:10.5232360+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:45:15.6125216+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:45:15.6127042+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:45:20.4959518+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:45:20.4960209+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:45:20.6809117+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:45:20.6810479+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:45:25.7684064+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:45:25.7684919+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:45:56.9656045+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:45:56.9875812+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:46:02.1144110+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:46:02.1144483+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:46:07.2068771+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:46:07.2069486+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-09-14T18:46:08.9108203+00:00 ContainerStatus: Site: srn-bhavya-app is unblocked.
+2026-09-14T18:46:12.2671555+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:46:13.6906871+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 09/14/2026 18:46:08, DetailsLevel: WARN
+2026-09-14T18:46:13.6907992+00:00 ContainerStatus: Container start method called.
+2026-09-14T18:46:13.6910228+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:46:13.6910845+00:00 ContainerStatus: Establishing network.
+2026-09-14T18:46:13.6911572+00:00 ContainerStatus: Pulling image: appsvc/python:3.11_20260910.3.tuxprod.
+2026-09-14T18:46:15.3015024+00:00 ContainerStatus: Container is starting.
+2026-09-14T18:46:15.3016348+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Mounting volumes for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T18:46:15.3017626+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-09-14T18:46:15.3018615+00:00 ContainerStatus: Establishing network if not established already.
+2026-09-14T18:46:15.3019516+00:00 ContainerStatus: Mounting volumes.
+2026-09-14T18:46:15.3020675+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:46:15.3103878+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-09-14T18:46:15.3314383+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:46:15.3318547+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:46:15.3517457+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:46:15.3735295+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T18:46:16.0641901+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for srn-bhavya-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-09-14T18:46:16.0650653+00:00 ContainerStatus: Creating container.
+2026-09-14T18:46:16.0653099+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-09-14T18:46:16.0658025+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stdout_c0b8db2308a045e883f0c39031ddd47d.
+2026-09-14T18:46:16.0731573+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stdout_c0b8db2308a045e883f0c39031ddd47d.
+2026-09-14T18:46:16.0734371+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stdout_c0b8db2308a045e883f0c39031ddd47d for reading in non-blocking mode.
+2026-09-14T18:46:16.0736759+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stdout_c0b8db2308a045e883f0c39031ddd47d.
+2026-09-14T18:46:16.0739319+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stdout_c0b8db2308a045e883f0c39031ddd47d.
+2026-09-14T18:46:16.0742610+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stderr_1291b6da87c14b82aefe7ba75156e181.
+2026-09-14T18:46:16.0744624+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stderr_1291b6da87c14b82aefe7ba75156e181.
+2026-09-14T18:46:16.0745855+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stderr_1291b6da87c14b82aefe7ba75156e181 for reading in non-blocking mode.
+2026-09-14T18:46:16.0748080+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stderr_1291b6da87c14b82aefe7ba75156e181.
+2026-09-14T18:46:16.0748991+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/38d20ccfc236_srn-bhavya-app/stderr_1291b6da87c14b82aefe7ba75156e181.
+2026-09-14T18:46:16.0751894+00:00 ContainerStatus: Creating container with image: appsvc/python:3.11_20260910.3.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod
+2026-09-14T18:46:16.5545012+00:00 ContainerStatus: Starting container: 38d20ccfc236_srn-bhavya-app.
+2026-09-14T18:46:16.6286322+00:00 ContainerStatus: Starting watchers and probes.
+2026-09-14T18:46:16.6492880+00:00 ContainerStatus: Starting metrics collection.
+2026-09-14T18:46:16.6593860+00:00 ContainerStatus: Container is running.
+2026-09-14T18:46:16.6597516+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:46:16.8711096+00:00 ContainerStatus: Container start method finished after 3180 ms.
+2026-09-14T18:46:16.8993007+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T18:46:16.9007519+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-09-14T18:46:16.9686063+00:00 ContainerStream:    _____                               
+2026-09-14T18:46:16.9686456+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-09-14T18:46:16.9686486+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-09-14T18:46:16.9686601+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-09-14T18:46:16.9686623+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-09-14T18:46:16.9686644+00:00 ContainerStream:         \/      \/                  \/ 
+2026-09-14T18:46:16.9686665+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-09-14T18:46:16.9686685+00:00 ContainerStream: 
+2026-09-14T18:46:16.9686708+00:00 ContainerStream: Documentation     : https://aka.ms/webapp-linux
+2026-09-14T18:46:16.9686730+00:00 ContainerStream: Python quickstart : https://aka.ms/python-qs
+2026-09-14T18:46:16.9686751+00:00 ContainerStream: Python version    : 3.11.15
+2026-09-14T18:46:16.9686772+00:00 ContainerStream: Instance name     : 10-141-2-250
+2026-09-14T18:46:16.9686798+00:00 ContainerStream: Instance id       : 18100db301644d601d376c8d9153a64aa7a54c803e21d5cf626b64e6b2b9ab0f
+2026-09-14T18:46:16.9686818+00:00 ContainerStream: 
+2026-09-14T18:46:16.9686839+00:00 ContainerStream: App port          : 8000
+2026-09-14T18:46:16.9686861+00:00 ContainerStream: Port selected by  : Default for this image
+2026-09-14T18:46:16.9686899+00:00 ContainerStream: (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-14T18:46:16.9686919+00:00 ContainerStream: 
+2026-09-14T18:46:16.9686942+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-09-14T18:46:16.9686961+00:00 ContainerStream: 
+2026-09-14T18:46:16.9686996+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:46:16.9687019+00:00 ContainerStream:  Run 'apphelp' for available commands and aliases.
+2026-09-14T18:46:16.9687041+00:00 ContainerStream:  Run 'install-nettools' to install networking utilities.
+2026-09-14T18:46:16.9687071+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T18:46:20.3033088+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-09-14T18:46:20.3242019+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-14T18:46:20.4136140+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-09-14T18:46:36.5968114+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-09-14T18:46:36.6257993+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-09-14T18:46:37.1587821+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-14T18:46:37.2278883+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-09-14T18:46:37.2285674+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-09-14T18:46:37.2483717+00:00 ContainerStream: done.
+2026-09-14T18:46:37.2585916+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-09-14T18:46:37.6404836+00:00 ContainerStream: Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 app:app
+2026-09-14T18:46:39.0245955+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-09-14T18:46:39.0248961+00:00 ContainerStream: Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 app:app'
+2026-09-14T18:46:39.2547065+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-09-14T18:46:39.2547404+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-09-14T18:46:39.2547516+00:00 ContainerStream: Build Operation ID: e98294bf-1afe-4f3f-9036-d3fa62d4e060
+2026-09-14T18:46:40.0625251+00:00 ContainerStream: Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-14T18:46:40.1879610+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-09-14T18:46:40.4428300+00:00 ContainerStream: WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2026-09-14T18:46:40.4437735+00:00 ContainerStream: WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2026-09-14T18:46:41.4638182+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1871] [INFO] Starting gunicorn 24.1.1
+2026-09-14T18:46:41.4747144+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1871] [INFO] Listening at: http://0.0.0.0:8000 (1871)
+2026-09-14T18:46:41.5113130+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1871] [INFO] Using worker: sync
+2026-09-14T18:46:41.5238578+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1874] [INFO] Booting worker with pid: 1874
+2026-09-14T18:46:41.5525948+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1874] [ERROR] Exception in worker process
+2026-09-14T18:46:41.5526550+00:00 ContainerStream: Traceback (most recent call last):
+2026-09-14T18:46:41.5526672+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-14T18:46:41.5526691+00:00 ContainerStream:     worker.init_process()
+2026-09-14T18:46:41.5526711+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-14T18:46:41.5526727+00:00 ContainerStream:     self.load_wsgi()
+2026-09-14T18:46:41.5526746+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-14T18:46:41.5526763+00:00 ContainerStream:     self.wsgi = self.app.wsgi()
+2026-09-14T18:46:41.5526779+00:00 ContainerStream:                 ^^^^^^^^^^^^^^^
+2026-09-14T18:46:41.5526798+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-14T18:46:41.5526814+00:00 ContainerStream:     self.callable = self.load()
+2026-09-14T18:46:41.5526830+00:00 ContainerStream:                     ^^^^^^^^^^^
+2026-09-14T18:46:41.5526849+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-14T18:46:41.5526866+00:00 ContainerStream:     return self.load_wsgiapp()
+2026-09-14T18:46:41.5526894+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:46:41.5526915+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-14T18:46:41.5526933+00:00 ContainerStream:     return util.import_app(self.app_uri)
+2026-09-14T18:46:41.5526950+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:46:41.5526969+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-14T18:46:41.5526987+00:00 ContainerStream:     mod = importlib.import_module(module)
+2026-09-14T18:46:41.5527004+00:00 ContainerStream:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:46:41.5527023+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-09-14T18:46:41.5527041+00:00 ContainerStream:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-14T18:46:41.5527059+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T18:46:41.5527077+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-09-14T18:46:41.5527094+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-09-14T18:46:41.5527112+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2026-09-14T18:46:41.5527137+00:00 ContainerStream: ModuleNotFoundError: No module named 'app'
+2026-09-14T18:46:41.5546233+00:00 ContainerStream: No module named 'app'
+2026-09-14T18:46:41.5627726+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1874] [INFO] Worker exiting (pid: 1874)
+2026-09-14T18:46:41.7914106+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1871] [ERROR] Worker (pid:1874) exited with code 3.
+2026-09-14T18:46:41.7931183+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1871] [ERROR] Shutting down: Master
+2026-09-14T18:46:41.7996186+00:00 ContainerStream: [2026-09-14 18:46:41 +0000] [1871] [ERROR] Reason: Worker failed to boot.
+2026-09-14T18:46:41.9804136+00:00 ContainerStatus: Container has finished running with exit code: 3.
+2026-09-14T18:46:41.9804996+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-09-14T18:46:41.9807305+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-09-14T18:46:41.9807671+00:00 ContainerStatus: Stopping container: 38d20ccfc236_srn-bhavya-app.
+2026-09-14T18:46:42.1708588+00:00 ContainerStatus: Deleting container: 38d20ccfc236_srn-bhavya-app. Retry count = 0
+2026-09-14T18:46:42.5335223+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-09-14T18:46:42.5384254+00:00 ContainerStatus: Container is terminated. Total time elapsed: 553 ms.
+2026-09-14T18:46:42.5386999+00:00 ContainerStatus: Site container: srn-bhavya-app terminated during site startup.
+2026-09-14T18:46:42.5394126+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:44:08, LastErrorDetails: Container exited with exit code 3 during startup after 26.6s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:46:42.5404167+00:00 ContainerStatus: Site startup probe failed after 25.6393021 seconds.
+2026-09-14T18:46:42.6723510+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:46:42.7107599+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-09-14T18:46:42.7112028+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:46:42.7495655+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:46:42.7496033+00:00 ContainerStatus: Site: srn-bhavya-app stopped.
+========== New Cold Start Attempt (2026-09-14T18:46:42.7803783+00:00) ==========
+2026-09-14T18:46:42.7803783+00:00 ContainerStatus: State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:46:42.9951540+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T18:46:43.1036608+00:00 ContainerStatus: Site: srn-bhavya-app will be blocked for 2 minutes till 09/14/2026 18:48:43
+2026-09-14T18:46:43.1046370+00:00 ContainerStatus: State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site: srn-bhavya-app will be blocked for 2 minutes till 09/14/2026 18:48:43, DetailsLevel: WARN
+2026-09-14T18:46:43.1055944+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:46:43 (UTC), DetailsLevel: WARN
+2026-09-14T18:46:43.9790385+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:46:43 (UTC), DetailsLevel: WARN
+2026-09-14T18:48:43.1037785+00:00 ContainerStatus: Site: srn-bhavya-app is unblocked.
+2026-09-14T19:34:05.5685762+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:46:43 (UTC), DetailsLevel: WARN
+2026-09-14T19:34:07.5498821+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site stopped at 09/14/2026 18:46:43 (UTC), DetailsLevel: WARN
+2026-09-14T19:34:07.5500207+00:00 ContainerStatus: Container start method called.
+2026-09-14T19:34:07.5507432+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T19:34:07.5508632+00:00 ContainerStatus: Establishing network.
+2026-09-14T19:34:07.5511927+00:00 ContainerStatus: Pulling image: appsvc/python:3.11_20260910.3.tuxprod.
+2026-09-14T19:34:08.3207331+00:00 ContainerStatus: Container is starting.
+2026-09-14T19:34:08.3211053+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Mounting volumes for srn-bhavya-app., DetailsLevel: INFO
+2026-09-14T19:34:08.3211989+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-09-14T19:34:08.3212503+00:00 ContainerStatus: Establishing network if not established already.
+2026-09-14T19:34:08.3212980+00:00 ContainerStatus: Mounting volumes.
+2026-09-14T19:34:08.3298551+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T19:34:08.3422444+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-09-14T19:34:08.3523490+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T19:34:08.3724350+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T19:34:08.3728517+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T19:34:08.4522232+00:00 ContainerStatus: Nested mountpoint 
+2026-09-14T19:34:08.8128198+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for srn-bhavya-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-09-14T19:34:08.8140904+00:00 ContainerStatus: Creating container.
+2026-09-14T19:34:08.8205190+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-09-14T19:34:08.8213325+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stdout_bb0c860dc84540678ba49831d045a5ca.
+2026-09-14T19:34:08.8232307+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stdout_bb0c860dc84540678ba49831d045a5ca.
+2026-09-14T19:34:08.8232827+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stdout_bb0c860dc84540678ba49831d045a5ca for reading in non-blocking mode.
+2026-09-14T19:34:08.8233329+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stdout_bb0c860dc84540678ba49831d045a5ca.
+2026-09-14T19:34:08.8233703+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stdout_bb0c860dc84540678ba49831d045a5ca.
+2026-09-14T19:34:08.8236093+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stderr_08fe8e59f62c490e9d5f56bb8d246da5.
+2026-09-14T19:34:08.8236874+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stderr_08fe8e59f62c490e9d5f56bb8d246da5.
+2026-09-14T19:34:08.8237255+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stderr_08fe8e59f62c490e9d5f56bb8d246da5 for reading in non-blocking mode.
+2026-09-14T19:34:08.8237685+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stderr_08fe8e59f62c490e9d5f56bb8d246da5.
+2026-09-14T19:34:08.8238055+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/2ab41b14d6c9_srn-bhavya-app/stderr_08fe8e59f62c490e9d5f56bb8d246da5.
+2026-09-14T19:34:08.8321164+00:00 ContainerStatus: Creating container with image: appsvc/python:3.11_20260910.3.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/python:3.11_20260910.3.tuxprod
+2026-09-14T19:34:09.7693957+00:00 ContainerStatus: Starting container: 2ab41b14d6c9_srn-bhavya-app.
+2026-09-14T19:34:09.8465070+00:00 ContainerStatus: Starting watchers and probes.
+2026-09-14T19:34:09.8568565+00:00 ContainerStatus: Starting metrics collection.
+2026-09-14T19:34:09.8579737+00:00 ContainerStatus: Container is running.
+2026-09-14T19:34:09.8596054+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T19:34:10.0184429+00:00 ContainerStatus: Container start method finished after 2467 ms.
+2026-09-14T19:34:10.0203220+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Container srn-bhavya-app successfully created and is running., DetailsLevel: INFO
+2026-09-14T19:34:10.0204505+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-09-14T19:34:10.1902475+00:00 ContainerStream:    _____                               
+2026-09-14T19:34:10.1902833+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-09-14T19:34:10.1902859+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-09-14T19:34:10.1902879+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-09-14T19:34:10.1902896+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-09-14T19:34:10.1902914+00:00 ContainerStream:         \/      \/                  \/ 
+2026-09-14T19:34:10.1902931+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-09-14T19:34:10.1902947+00:00 ContainerStream: 
+2026-09-14T19:34:10.1902966+00:00 ContainerStream: Documentation     : https://aka.ms/webapp-linux
+2026-09-14T19:34:10.1902984+00:00 ContainerStream: Python quickstart : https://aka.ms/python-qs
+2026-09-14T19:34:10.1903001+00:00 ContainerStream: Python version    : 3.11.15
+2026-09-14T19:34:10.1903018+00:00 ContainerStream: Instance name     : 10-141-2-250
+2026-09-14T19:34:10.1903040+00:00 ContainerStream: Instance id       : 18100db301644d601d376c8d9153a64aa7a54c803e21d5cf626b64e6b2b9ab0f
+2026-09-14T19:34:10.1903072+00:00 ContainerStream: 
+2026-09-14T19:34:10.1903092+00:00 ContainerStream: App port          : 8000
+2026-09-14T19:34:10.1903110+00:00 ContainerStream: Port selected by  : Default for this image
+2026-09-14T19:34:10.1903130+00:00 ContainerStream: (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-14T19:34:10.1903145+00:00 ContainerStream: 
+2026-09-14T19:34:10.1903163+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-09-14T19:34:10.1903178+00:00 ContainerStream: 
+2026-09-14T19:34:10.1903210+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T19:34:10.1903229+00:00 ContainerStream:  Run 'apphelp' for available commands and aliases.
+2026-09-14T19:34:10.1903249+00:00 ContainerStream:  Run 'install-nettools' to install networking utilities.
+2026-09-14T19:34:10.1903275+00:00 ContainerStream: ────────────────────────────────────────────────────────────────
+2026-09-14T19:34:12.8684846+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-09-14T19:34:12.8880182+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-14T19:34:12.9401896+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-09-14T19:34:29.1640207+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-09-14T19:34:29.1940248+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-09-14T19:34:29.6138895+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-14T19:34:29.7552155+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-09-14T19:34:29.8313379+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-09-14T19:34:29.8313578+00:00 ContainerStream: done.
+2026-09-14T19:34:29.8437547+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-09-14T19:34:30.1647548+00:00 ContainerStream: Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 app:app
+2026-09-14T19:34:31.0056568+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-09-14T19:34:31.0447284+00:00 ContainerStream: Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 app:app'
+2026-09-14T19:34:32.0242214+00:00 ContainerStream: Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-09-14T19:34:32.0270641+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-09-14T19:34:32.0271035+00:00 ContainerStream: Build Operation ID: 3f34829d-d9ff-4959-9e7e-ae87d6372661
+2026-09-14T19:34:33.0573554+00:00 ContainerStream: Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-14T19:34:33.2162402+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-09-14T19:34:33.5057643+00:00 ContainerStream: WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2026-09-14T19:34:33.5058013+00:00 ContainerStream: WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2026-09-14T19:34:35.8115091+00:00 ContainerStream: [2026-09-14 19:34:35 +0000] [1871] [INFO] Starting gunicorn 24.1.1
+2026-09-14T19:34:35.8298874+00:00 ContainerStream: [2026-09-14 19:34:35 +0000] [1871] [INFO] Listening at: http://0.0.0.0:8000 (1871)
+2026-09-14T19:34:35.8299177+00:00 ContainerStream: [2026-09-14 19:34:35 +0000] [1871] [INFO] Using worker: sync
+2026-09-14T19:34:35.8399299+00:00 ContainerStream: [2026-09-14 19:34:35 +0000] [1874] [INFO] Booting worker with pid: 1874
+2026-09-14T19:34:35.8827285+00:00 ContainerStream: [2026-09-14 19:34:35 +0000] [1874] [ERROR] Exception in worker process
+2026-09-14T19:34:35.8827787+00:00 ContainerStream: Traceback (most recent call last):
+2026-09-14T19:34:35.8827820+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-14T19:34:35.8827840+00:00 ContainerStream:     worker.init_process()
+2026-09-14T19:34:35.8827861+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-14T19:34:35.8827878+00:00 ContainerStream:     self.load_wsgi()
+2026-09-14T19:34:35.8827898+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-14T19:34:35.8827994+00:00 ContainerStream:     self.wsgi = self.app.wsgi()
+2026-09-14T19:34:35.8828013+00:00 ContainerStream:                 ^^^^^^^^^^^^^^^
+2026-09-14T19:34:35.8828034+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-14T19:34:35.8828051+00:00 ContainerStream:     self.callable = self.load()
+2026-09-14T19:34:35.8828069+00:00 ContainerStream:                     ^^^^^^^^^^^
+2026-09-14T19:34:35.8828089+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-14T19:34:35.8828106+00:00 ContainerStream:     return self.load_wsgiapp()
+2026-09-14T19:34:35.8828123+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^
+2026-09-14T19:34:35.8828144+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-14T19:34:35.8828162+00:00 ContainerStream:     return util.import_app(self.app_uri)
+2026-09-14T19:34:35.8828180+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T19:34:35.8828199+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-14T19:34:35.8828217+00:00 ContainerStream:     mod = importlib.import_module(module)
+2026-09-14T19:34:35.8828248+00:00 ContainerStream:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T19:34:35.8828267+00:00 ContainerStream:   File "/opt/python/3.11.15/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-09-14T19:34:35.8828286+00:00 ContainerStream:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-14T19:34:35.8828303+00:00 ContainerStream:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-14T19:34:35.8828322+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-09-14T19:34:35.8828340+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-09-14T19:34:35.8828358+00:00 ContainerStream:   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2026-09-14T19:34:35.8828375+00:00 ContainerStream: ModuleNotFoundError: No module named 'app'
+2026-09-14T19:34:35.8993353+00:00 ContainerStream: No module named 'app'
+2026-09-14T19:34:35.8993495+00:00 ContainerStream: [2026-09-14 19:34:35 +0000] [1874] [INFO] Worker exiting (pid: 1874)
+2026-09-14T19:34:36.2316842+00:00 ContainerStream: [2026-09-14 19:34:36 +0000] [1871] [ERROR] Worker (pid:1874) exited with code 3.
+2026-09-14T19:34:36.2723775+00:00 ContainerStream: [2026-09-14 19:34:36 +0000] [1871] [ERROR] Shutting down: Master
+2026-09-14T19:34:36.2792440+00:00 ContainerStream: [2026-09-14 19:34:36 +0000] [1871] [ERROR] Reason: Worker failed to boot.
+2026-09-14T19:34:36.7916182+00:00 ContainerStatus: Container has finished running with exit code: 3.
+2026-09-14T19:34:36.7931215+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-09-14T19:34:36.8114612+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-09-14T19:34:36.8125464+00:00 ContainerStatus: Stopping container: 2ab41b14d6c9_srn-bhavya-app.
+2026-09-14T19:34:36.9548392+00:00 ContainerStatus: Deleting container: 2ab41b14d6c9_srn-bhavya-app. Retry count = 0
+2026-09-14T19:34:37.1730166+00:00 ContainerStatus: Container get mounts received unexpected exception.
+2026-09-14T19:34:37.2320786+00:00 ContainerStatus: Container get processes received unexpected exception.
+2026-09-14T19:34:37.3536826+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-09-14T19:34:37.3805604+00:00 ContainerStatus: Container is terminated. Total time elapsed: 569 ms.
+2026-09-14T19:34:37.3818609+00:00 ContainerStatus: Site container: srn-bhavya-app terminated during site startup.
+2026-09-14T19:34:37.3832424+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 18:46:42, LastErrorDetails: Container exited with exit code 3 during startup after 25.9s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T19:34:37.4120739+00:00 ContainerStatus: Site startup probe failed after 27.3354083 seconds.
+2026-09-14T19:34:37.7838850+00:00 ContainerStatus: State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 19:34:37, LastErrorDetails: Container exited with exit code 3 during startup after 27.5s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T19:34:38.2801861+00:00 ContainerStatus: Failed to start site. Revert by stopping site.
+2026-09-14T19:34:38.2808833+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 19:34:37, LastErrorDetails: Container exited with exit code 3 during startup after 27.5s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T19:34:38.2878807+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 09/14/2026 19:34:37, LastErrorDetails: Container exited with exit code 3 during startup after 27.5s. Please inspect your container logs for more details., Details: Site container: srn-bhavya-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-09-14T19:34:38.2879026+00:00 ContainerStatus: Site: srn-bhavya-app stopped.
